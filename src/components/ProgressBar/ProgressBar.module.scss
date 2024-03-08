@@ -1,0 +1,17 @@
+.progress {
+  display: inline-block;
+  position: relative;
+
+  .ring {
+    transform-origin: center;
+    transform: rotate(-90deg);
+  }
+  .percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + 5px), -50%);
+  }
+}
+
+

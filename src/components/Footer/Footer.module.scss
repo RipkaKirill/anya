@@ -1,0 +1,51 @@
+.footer {
+  background: var(--primary-color);
+  padding-bottom: 15px;
+
+  .currency {
+    color: white;
+    display: flex;
+    gap: 15px;
+  }
+  .currencyBlock {
+    display: flex;
+    gap: 25px;
+  }
+  .currencyValue {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .hundred {
+      position: relative;
+      margin-right: 13px;
+      &::after {
+        content: "100";
+        position: absolute;
+        top: -3px;
+        left: 18px;
+        font-size: 7px;
+        font-style: normal;
+      }
+    }
+  }
+}
+
+.separation {
+  margin-top: 3px;
+  height: 12px;
+}
+
+.curr {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .currencyBlock {
+    flex-direction: column ;
+    gap: 10px !important;
+  }
+  .separation {
+    display: none;
+  }
+}

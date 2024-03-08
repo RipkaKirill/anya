@@ -1,0 +1,15 @@
+.videos {
+
+  .title {
+    font-size: 50px;
+    color: var(--primary-color);
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 450px){
+
+  .title {
+    font-size: 35px !important;
+  }
+}

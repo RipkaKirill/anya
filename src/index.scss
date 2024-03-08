@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "bbb";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/baloo-cyrillic.woff") format("woff");
+}
+@font-face {
+  font-family: "Comic";
+  font-weight: 500;
+  src: url("./assets/fonts/ComicHelvetic_Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Comic";
+  font-style: bold;
+  font-weight: 600;
+  src: url("./assets/fonts/ComicHelvetic_Heavy.woff") format("woff");
+}
+
+:root {
+  --primary-color: #be5683;
+  --body-bg: #ffe4e4;
+  --font-color: #fff;
+  --font-hover-color: #be5683;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "bbb";
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 20px;
+
+  scrollbar-width: 8px;
+  scrollbar-color: gray;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--primary-color);
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 100px;
+    background-color: var(--body-bg);
+    border-radius: 4px;
+  }
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  background: var(--body-bg);
+}
+
+#root {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page {
+  position: relative;
+  z-index: 5;
+  margin-top: -25px;
+  flex: 1 1 100%;
+  padding-bottom: 30px;
+}
+
+.container {
+  max-width: 1270px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+.active {
+  color: #a0a4cb !important;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
