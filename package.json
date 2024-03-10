@@ -1,7 +1,7 @@
 {
   "name": "videos-app",
   "version": "0.1.0",
-  "homepage": "https://RipkaKirill.github.io/videosforanya",
+  "homepage": "https://RipkaKirill.github.io/anya",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.0",
